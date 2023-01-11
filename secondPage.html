@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./secondPage.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>Multi-page Registration form</h1>
+            <label>HSC Institution name<span class="req">*</span></label><br>
+            <input class="input2" id="hsc_name" type="text" placeholder="HSC Institution Name" required/><br>
+
+            <label>HSC Board<span class="req">*</span></label><br>
+            <select id="hsc_board" class="input1">
+                <option>Select</option>
+                <option value="cbse">CBSE</option>
+                <option value="icsc">ICSC</option>
+                <option value="state board">State Board</option>
+            </select><br>
+
+            <label>Percentage(%) <span class="req">*</span></label><br>
+            <input class="input2" id="hsc_percentage" type="number" placeholder="HSC Percentage" required/><br>
+
+            <label>SSC Institution name <span class="req">*</span></label><br>
+            <input class="input2" id="ssc_name" type="text" placeholder="SSC Institute Name" required/><br>
+
+            <label>SSC Board<span class="req">*</span></label><br>
+            <select id="ssc_board" class="input1">
+                <option>Select</option>
+                <option value="cbse">CBSE</option>
+                <option value="icsc">ICSC</option>
+                <option value="state board">State Board</option>
+            </select><br>
+
+            <label>Score in SSC in percentage(%) <span class="req">*</span></label><br>
+            <input class="input2" id="ssc_percentage" type="number" placeholder="SSC percentage" required/><br>
+
+            <label>Currently pursuing<span class="req">*</span></label><br>
+            <select id="pursuing" class="input1">
+                <option>Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+
+            <label>Current educational institution name<span class="req">*</span></label><br>
+            <input class="input2" id="current_institute" type="text" placeholder="Current Institution Name"/><br>
+
+            <label>Overall percentage(%) <span class="req">*</span></label><br>
+            <input class="input2" id="current_percentage" type="number" placeholder="percentage" required/><br>
+            
+            <label>Current backlogs if any <span class="req">*</span></label><br>
+            <select id="backlog" class="input1">
+                <option>Select</option>
+                <option value="yes">Yes</option>
+                <option value="No">No</option>
+            </select><br>
+            
+
+            <button type="submit" onclick="secondPage(event)">Save</button>
+            <a id="next" href="./thirdPage.html">Next</a>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>Multi-page Registration form</h1>
+            <label>First <span class="req">*</span></label><br>
+            <input class="input1" id="fname" type="text" placeholder="First Name" pattern="[A-Za-z0-9]+" required />
+            <input class="input1" id="lname" type="text" placeholder="Last Name" pattern="[A-Za-z0-9]+" required /><br>
+
+            <label>Date of Birth <span class="req">*</span></label><br>
+            <input class="input2" id="dob" type="date" placeholder="mm/dd/yyyy" required /><br>
+
+            <label>Email <span class="req">*</span></label><br>
+            <input class="input2" id="email" type="email" placeholder="Email" required /><br>
+
+            <label>Father's name <span class="req">*</span></label><br>
+            <input class="input1" id="ffname" type="text" placeholder="First Name" required />
+            <input class="input1" id="flname" type="text" placeholder="Last Name" required /><br>
+
+            <label>Mother's name <span class="req">*</span></label><br>
+            <input class="input1" id="mfname" type="text" placeholder="First Name" required />
+            <input class="input1" id="mlname" type="text" placeholder="Last Name" required /><br>
+
+            <label>Gender <span class="req">*</span></label><br>
+            <input type="radio" class="gender" name="gender" value="Male"> <label>Male</label>
+            <input type="radio" class="gender" name="gender" value="Female"> <label>Female</label><br>
+
+
+            <label>Nationality <span class="req">*</span></label><br>
+            <input class="input2" id="nationality" type="text" required /><br>
+
+            <label>Home Address <span class="req">*</span></label><br>
+            <input class="input2" id="address" type="text" placeholder="Flat no./ building" required /><br><br>
+            <input class="input1" id="address1" type="text" placeholder="Street" />
+            <input class="input1" id="address2" type="text" placeholder="City" /><br>
+
+            <label>Telephone - Home <span class="req">*</span></label><br>
+            <input class="input2" id="homeNumber" type="number" placeholder="############" /><br>
+
+            <label>Telephone - Mobile <span class="req">*</span></label><br>
+            <input class="input2" id="number" type="number" placeholder="############" required /><br>
+
+            <button type="submit" onclick="firstPageData(event)">Save</button>
+            <a id="next" href="./secondPage.html">Next</a>
+        </form>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
